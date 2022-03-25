@@ -1,0 +1,22 @@
+{
+    "sequelize": {
+        "host": "localhost",
+        "database": "catalyst",
+        "port": 5432,
+        "username": "<snip>",
+        "password": "<snip>",
+        "schema": "development"
+    },
+  "auth_token":{
+   "url" : "https://api.managed-solutions.cloud.ibm.com/cmas-auth/v1/login",
+   "api_key": ""
+  },
+  "clients": {
+    "acct-mgmt": {
+        "uri": ""
+    },
+    "dx-iam": {
+        "uri": ""
+    }
+}
+}

@@ -1,0 +1,115 @@
+{
+    "sequelize": {
+        "dialect": "postgres",
+        "logging": false,
+        "dialectOptions": {
+            "ssl": {
+                "require": true,
+                "rejectUnauthorized": false
+            }
+        }
+    },
+    "auth_token": {
+        "url": "https://api.managed-solutions.cloud.ibm.com/cmas-auth/v1/login"
+    },
+    "log4js": {
+        "appenders": {
+            "console": {
+                "type": "console",
+                "layout": {
+                    "type": "basic"
+                }
+            }
+        },
+        "categories": {
+            "default": {
+                "appenders": ["console"],
+                "level": "debug"
+            }
+        }
+    },
+    "email_role_ids": {
+        "clientUnitLeader": "2",
+        "abDeliveryProjectExecutive": "3",
+        "accountProjectExecutive": "4",
+        "clientUnitLeaderDelegate": "21",
+        "abDeliveryProjectExecutiveDelegate": "31",
+        "accountFA": "39",
+        "accountProjectExecutiveDelegate": "41",
+        "clientSubUnitLeader": "105",
+        "geoProjectExecutive": "309",
+        "geoDeliveryProjectExecutive": "311",
+        "wwProjectExecutive": "313",
+        "wwDeliveryProjectExecutiveDelegate": "316",
+        "marketCOO": "333",
+        "marketIsLeader": "334",
+        "marketGtsGm": "335",
+        "marketIsCFO": "336"
+    },
+
+    "mock_run": {
+        "account_sync": true,
+        "resource_sync": true,
+        "user_access_sync": true
+    },
+    "run_job": {
+        "account_sync": true,
+        "resource_sync": false,
+        "user_access_sync": false
+    },
+    "clients": {
+        "dx-iam": {
+            "policies": {
+                "clientUnitLeader": "2",
+                "abDeliveryProjectExecutive": "3",
+                "accountProjectExecutive": "4",
+                "clientUnitLeaderDelegate": "21",
+                "abDeliveryProjectExecutiveDelegate": "31",
+                "accountBOM": "38",
+                "accountFA": "39",
+                "accountProjectExecutiveDelegate": "41",
+                "accountPortfolioManager": "42",
+                "accountPortfolioManagerDelegate": "61",
+                "clientUnitBusinessAdvisor": "101",
+                "clientUnitBusinessAdvisorDelegate": "102",
+                "T&TProgramMgr": "103",
+                "T&TProgramMgrDelegate": "104",
+                "clientSubUnitLeader": "105",
+                "clientSubUnitLeaderDelegate": "106",
+                "clientUnitCFO": "107",
+                "geoProjectExecutive": "309",
+                "geoProjectExecutiveDelegate": "310",
+                "geoDeliveryProjectExecutive": "311",
+                "geoDeliveryProjectExecutiveDelegate": "312",
+                "wwProjectExecutive": "313",
+                "wwProjectExecutiveDelegate": "314",
+                "wwDeliveryProjectExecutive": "315",
+                "wwDeliveryProjectExecutiveDelegate": "316",
+                "marketOperationsLeader": "330",
+                "marketOperationsLeaderDelegate": "331",
+                "marketCOO": "333",
+                "marketIsLeader": "334",
+                "marketGtsGm": "335",
+                "marketIsCFO": "336",
+                "marketClientMgtLeader": "337",
+                "marketSalesLeader": "338",
+                "marketDeliveryLeader": "339",
+                "marketRfsLeader": "340",
+                "marketT&TDeliveryLeader": "341",
+                "marketTc&IsLeader": "342",
+                "marketSalesAnalyst": "343",
+                "marketDeliveryAnalyst": "344",
+                "marketFinanceAnalyst": "345",
+                "clientUnitProjectPortfolioLdr": "346",
+                "clientUnitDeliveryLeader": "347",
+                "marketWfmAnalyst": "348",
+                "clientUnitProjectPortfolioLdrDelegate": "349",
+                "clientUnitDeliveryLeaderDelegate": "350",
+                "marketBusinessAdvisor": "351",
+                "marketBusinessAnalyst": "357",
+                "accountOwner": "371",
+                "accountOwnerDelegate": "372"
+            }
+        }
+    }
+}

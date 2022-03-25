@@ -1,0 +1,26 @@
+{
+    "sequelize": {
+        "host": "5fe88e5f-50f6-46c5-a742-c4076f0a90eb.bn2a2vgd01r3l0hfmvc0.private.databases.appdomain.cloud",
+        "port": 31681,
+        "database": "catalyst",
+        "schema": "catalyst"
+    },
+    "mock_run": {
+        "account_sync": false,
+        "resource_sync": false,
+        "user_access_sync": false
+    },
+    "run_job": {
+        "account_sync": true,
+        "resource_sync": true,
+        "user_access_sync": true
+    },
+    "clients": {
+        "acct-mgmt": {
+            "uri": "https://api-test.managed-solutions.cloud.ibm.com/acct-mgmt"
+        },
+        "dx-iam": {
+            "uri": "https://api-test.managed-solutions.cloud.ibm.com/iam"
+        }
+    }
+}

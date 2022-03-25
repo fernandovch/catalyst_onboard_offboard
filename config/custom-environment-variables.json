@@ -1,0 +1,9 @@
+{
+    "auth_token":{
+        "api_key": "CMAS_AUTH_KEY"
+       },
+       "sequelize": {
+        "username": "PG_USERNAME",
+        "password": "PG_PASSWORD"
+      }
+}
